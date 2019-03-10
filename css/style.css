@@ -9,7 +9,6 @@ html, body {
 	height: 100%;
 	display: block;
 	position: relative;
-	border: 2px solid red;
 	text-align: center;
 }
 
@@ -180,21 +179,21 @@ span {
 }
 
 #banner-336x300 #fish1 {
-	bottom: 20px;
-	left: 20px;
-	width: 65px;
+	bottom: 60px;
+	left: 100px;
+	width: 52px;
 }
 
 #banner-336x300 #fish2 {
 	bottom: 40px;
-	left: 120px;
-	width: 50px;
+	left: 15px;
+	width: 66px;
 }
 
 #banner-336x300 #fish3 {
 	bottom: 30px;
 	left: 180px;
-	width: 55px;
+	width: 50px;
 }
 
 #banner-336x300 #alga {
@@ -288,3 +287,77 @@ span {
 	position: absolute;
 }
 
+/*120x600*/
+
+#banner-120x600 #sky:after {
+	height: 10px;
+	background-size: auto 12px;
+}
+
+#banner-120x600 #water:after {
+	height: 10px;
+	background-size: auto 10px;
+}
+
+#banner-120x600 #sun {
+	top: -40px;
+	left: -40px;
+	width: 80px;
+}
+
+#banner-120x600 #cloud1 {
+	top: 20px;
+	right: 20px;
+	width: 55px;
+}
+
+#banner-120x600 #fishman {
+	bottom: -15px;
+	right: 20px;
+	width: 85px;
+}
+
+#banner-120x600 h1 {
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+#banner-120x600 h1 b {
+	font-size: 40px;
+}
+
+#banner-120x600 h2 {
+	font-size: 24px;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+#banner-120x600 p {
+	font-size: 13px;
+	padding: 0 10px;
+	line-height: 1.2;
+	margin-top: 15px;
+}
+
+#banner-120x600 p:first-of-type {
+	font-size: 14px;
+}
+
+#banner-120x600 #fish1 {
+	bottom: 25px;
+	left: 5px;
+	width: 52px;
+}
+
+#banner-120x600 #alga {
+	bottom: 5px;
+	right: 5px;
+	width: 40px;
+}
+
+#banner-120x600 span {
+	font-size: 11px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 10px;
+}
