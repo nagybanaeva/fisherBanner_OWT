@@ -6,15 +6,24 @@ html, body {
 
 #banner-336x300, #banner-120x600, #banner-728x90 {
 	width: 100%;
-	height: 100%;
 	display: block;
-	position: relative;
 	text-align: center;
+}
+
+#banner-120x600 {
+	height: 100%;
 }
 
 img {
 	position: absolute;
 	height: auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
 }
 
 h1 {
@@ -23,21 +32,27 @@ h1 {
 	margin: 0;
 	font-weight: normal;
 	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+	z-index: 10;
+	position: relative;
 }
 
 h2 {
 	font-family: 'Caveat Brush', cursive;
 	color: #F26721;
 	margin: 0;
+	z-index: 10;
 	font-weight: normal;
 	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+	position: relative;
 }
 
 p {
 	margin: 0 0 10px 0;
 	color: #ffffff;
 	padding: 0 15px;
+	z-index: 10;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	position: relative;
 }
 
 span {
@@ -54,6 +69,7 @@ span {
 	background: -webkit-linear-gradient(top, rgba(251,176,64,1) 0%,rgba(247,148,29,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(251,176,64,1) 0%,rgba(247,148,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb040', endColorstr='#f7941d',GradientType=0 ); /* IE6-9 */
+	z-index: 10;
 }
 
 #sky {
@@ -107,14 +123,15 @@ span {
 }
 
 .bubble {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.3);
 	display: block;
-	width: 15px;
-	height: 15px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
-	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5);
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3);
 	position: absolute;
 	opacity: 0;
+	z-index: 1;
 }
 
 #bubble1 {
@@ -255,6 +272,7 @@ span {
 
 #banner-728x90 p:first-of-type {
 	font-size: 18px;
+	margin-top: 10px;
 }
 
 #banner-728x90 #fish1 {
@@ -282,7 +300,7 @@ span {
 }
 
 #banner-728x90 span {
-	bottom: 22px;
+	bottom: 18px;
 	left: 280px;
 	position: absolute;
 }
@@ -360,4 +378,272 @@ span {
 	height: 24px;
 	line-height: 24px;
 	padding: 0 10px;
+}
+
+/*animations*/
+
+#sun {
+	animation: rotate 5s linear infinite;
+	-webkit-animation: rotate 5s linear infinite;
+	-moz-animation: rotate 5s linear infinite;
+	-o-animation: rotate 5s linear infinite;
+}
+
+#bubble1 {
+	transform: scale(0);
+	animation: bubbles 5s linear infinite;
+	-webkit-animation: bubbles 5s linear infinite;
+	-moz-animation: bubbles 5s linear infinite;
+	-o-animation: bubbles 5s linear infinite;
+}
+
+#bubble2 {
+	transform: scale(0);
+	animation: bubbles 10s linear infinite;
+	-webkit-animation: bubbles 10s linear infinite;
+	-moz-animation: bubbles 10s linear infinite;
+	-o-animation: bubbles 10s linear infinite;
+}
+
+#bubble3 {
+	transform: scale(0);
+	animation: bubbles 6s linear infinite;
+	-webkit-animation: bubbles 6s linear infinite;
+	-moz-animation: bubbles 6s linear infinite;
+	-o-animation: bubbles 6s linear infinite;
+}
+
+#bubble4 {
+	transform: scale(0);
+	animation: bubbles 12s linear infinite;
+	-webkit-animation: bubbles 12s linear infinite;
+	-moz-animation: bubbles 12s linear infinite;
+	-o-animation: bubbles 12s linear infinite;
+}
+
+#bubble5 {
+	transform: scale(0);
+	animation: bubbles 3s linear infinite;
+	-webkit-animation: bubbles 3s linear infinite;
+	-moz-animation: bubbles 3s linear infinite;
+	-o-animation: bubbles 3s linear infinite;
+}
+
+h1 {
+	opacity: 0;
+	animation: fadein 3s ease forwards;
+	-webkit-animation: fadein 3s ease forwards;
+	-moz-animation: fadein 3s ease forwards;
+	-o-animation: fadein 3s ease forwards;
+}
+
+h2 {
+	opacity: 0;
+	animation: fadein 3s ease 0.5s forwards;
+	-webkit-animation: fadein 3s ease 0.5s forwards;
+	-moz-animation: fadein 3s ease 0.5s forwards;
+	-o-animation: fadein 3s ease 0.5s forwards;
+}
+
+p {
+	opacity: 0;
+	animation: fadein 3s ease 2s forwards;
+	-webkit-animation: fadein 3s ease 2s forwards;
+	-moz-animation: fadein 3s ease 2s forwards;
+	-o-animation: fadein 3s ease 2s forwards;
+}
+
+span {
+	opacity: 0;
+	animation: fadein 3s ease 2.5 s forwards;
+	-webkit-animation: fadein 3s ease 2.5s forwards;
+	-moz-animation: fadein 3s ease 2.5s forwards;
+	-o-animation: fadein 3s ease 2.5s forwards;
+}
+
+#fishman {
+	visibility: hidden;
+	animation: slideinright 2s ease 1s forwards;
+	-webkit-animation: slideinright 2s ease 1s forwards;
+	-moz-animation: slideinright 2s ease 1s forwards;
+	-o-animation: slideinright 2s ease 1s forwards;
+}
+
+#alga {
+	opacity: 0;
+	animation: scale 2s ease 3s forwards;
+	-webkit-animation: scale 2s ease 3s forwards;
+	-moz-animation: scale 2s ease 3s forwards;
+	-o-animation: scale 2s ease 3s forwards;
+}
+
+#fish1 {
+	animation: fish 5s ease infinite;
+	-webkit-animation: fish 5s ease infinite;
+	-moz-animation: fish 5s ease infinite;
+	-o-animation: fish 5s ease infinite;
+}
+
+#fish2 {
+	animation: fish 10s ease infinite;
+	-webkit-animation: fish 10s ease infinite;
+	-moz-animation: fish 10s ease infinite;
+	-o-animation: fish 10s ease infinite;
+}
+
+#fish3 {
+	animation: fish 7s ease infinite;
+	-webkit-animation: fish 7s ease infinite;
+	-moz-animation: fish 7s ease infinite;
+	-o-animation: fish 7s ease infinite;
+}
+
+#banner-336x300, #banner-728x90 {
+	position: absolute;
+	height: 200%;
+	animation: scene 7s ease 5s forwards;
+	-webkit-animation: scene 7s ease 5s forwards;
+	-moz-animation: scene 7s ease 5s forwards;;
+	-o-animation: scene 7s ease 5s forwards;;
+}
+
+@keyframes scene {
+	0%{ top: 0;}
+	100%{ top: -100%;}
+}
+
+@keyframes fish {
+	0%{ margin-bottom: 0; left: -50px;}
+	50%{ margin-bottom: 30px; left: 50%;}
+	100%{ margin-bottom: 0; left: 110%;}
+}
+
+@-webkit-keyframes fish {
+	0%{ margin-bottom: 0; left: -50px;}
+	50%{ margin-bottom: 30px; left: 50%;}
+	100%{ margin-bottom: 0; left: 110%;}
+}
+
+@-moz-keyframes fish {
+	0%{ margin-bottom: 0; left: -50px;}
+	50%{ margin-bottom: 30px; left: 50%;}
+	100%{ margin-bottom: 0; left: 110%;}
+}
+
+@-o-keyframes fish {
+	0%{ margin-bottom: 0; left: -50px;}
+	50%{ margin-bottom: 30px; left: 50%;}
+	100%{ margin-bottom: 0; left: 110%;}
+}
+
+@keyframes scale {
+	0%{ transform: scale(0); opacity: 0; bottom: -100px;}
+	100%{ transform: scale(1); opacity: 1; bottom: 5px;}
+}
+
+@-webkit-keyframes scale {
+	0%{ -webkit-transform: scale(0); opacity: 0; bottom: -100px;}
+	100%{ -webkit-transform: scale(1); opacity: 1; bottom: 5px;}
+}
+
+@-moz-keyframes scale {
+	0%{ -moz-transform: scale(0); opacity: 0; bottom: -100px;}
+	100%{ -moz-transform: scale(1); opacity: 1; bottom: 5px;}
+}
+
+@-o-keyframes scale {
+	0%{ -o-transform: scale(0); opacity: 0; bottom: -100px;}
+	100%{ -o-transform: scale(1); opacity: 1; bottom: 5px;}
+}
+
+@keyframes slideinright {
+	0%{ right: -200px; visibility: visible;}
+	100%{ right: 20px; visibility: visible;}
+}
+
+@-webkit-keyframes slideinright {
+	0%{ right: -200px; visibility: visible;}
+	100%{ right: 20px; visibility: visible;}
+}
+
+@-moz-keyframes slideinright {
+	0%{ right: -200px; visibility: visible;}
+	100%{ right: 20px; visibility: visible;}
+}
+
+@-o-keyframes slideinright {
+	0%{ right: -200px; visibility: visible;}
+	100%{ right: 20px; visibility: visible;}
+}
+
+@keyframes fadein {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+@-o-keyframes fadein {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+
+@keyframes bubbles {
+	0%{ margin-left: 0px; bottom: 0; opacity: 0; transform: scale(0)}
+	25%{ margin-left: 15px; bottom: 25%; opacity: 0.5;transform: scale(1)}
+	50%{ margin-left: 0px; bottom: 50%; opacity: 1;transform: scale(1)}
+	75%{ margin-left: 15px; bottom: 75%; opacity: 1;transform: scale(1)}
+	100%{ margin-left: 0px; bottom: 100%; opacity: 0; transform: scale(0)}
+}
+
+@-webkit-keyframes bubbles {
+	0%{ margin-left: 0px; bottom: 0; opacity: 0; -webkit-transform: scale(0)}
+	25%{ margin-left: 15px; bottom: 25%; opacity: 0.5; -webkit-transform: scale(1)}
+	50%{ margin-left: 0px; bottom: 50%; opacity: 1; -webkit-transform: scale(1)}
+	75%{ margin-left: 15px; bottom: 75%; opacity: 1;transform: scale(1)}
+	100%{ margin-left: 0px; bottom: 100%; opacity: 0; -webkit-transform: scale(0)}
+}
+
+@-moz-keyframes bubbles {
+	0%{ margin-left: 0px; bottom: 0; opacity: 0; -moz-transform: scale(0)}
+	25%{ margin-left: 15px; bottom: 25%; opacity: 0.5; -moz-transform: scale(1)}
+	50%{ margin-left: 0px; bottom: 50%; opacity: 1; -moz-transform: scale(1)}
+	75%{ margin-left: 15px; bottom: 75%; opacity: 1;transform: scale(1)}
+	100%{ margin-left: 0px; bottom: 100%; opacity: 0; -moz-transform: scale(0)}
+}
+
+@-o-keyframes bubbles {
+	0%{ margin-left: 0px; bottom: 0; opacity: 0; -o-transform: scale(0)}
+	25%{ margin-left: 15px; bottom: 25%; opacity: 0.5; -o-transform: scale(1)}
+	50%{ margin-left: 0px; bottom: 50%; opacity: 1; -o-transform: scale(1)}
+	75%{ margin-left: 15px; bottom: 75%; opacity: 1; -o-transform: scale(1)}
+	100%{ margin-left: 0px; bottom: 100%; opacity: 0; -o-transform: scale(0)}
+}
+
+@keyframes rotate {
+	from{ transform: rotate(0deg);}
+	to{ transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate {
+	from{ -webkit-transform: rotate(0deg);}
+	to{ -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+	from{ -moz-transform: rotate(0deg);}
+	to{ -moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes rotate {
+	from{ -o-transform: rotate(0deg);}
+	to{ -o-transform: rotate(360deg);}
 }
